@@ -1,3 +1,17 @@
+:root {
+    color-scheme: dark;
+    --bg-ship: #120b06;
+    --bg-board: #2c1a0d;
+    --bg-paper: #3f2d19;
+    --bg-wood: #4c3721;
+    --bg-gold: #d9b24a;
+    --bg-gold-dark: #b78b21;
+    --text-paper: #f5e0b8;
+    --text-paper-muted: #cab887;
+    --text-gold: #d9b24a;
+    --border-wood: #8a6240;
+}
+
 html,
 body,
 #app {
@@ -7,6 +21,8 @@ body,
 
 body {
     font-family: system-ui, -apple-system, sans-serif;
+    color: var(--text-paper);
+    background: radial-gradient(circle at top, #3b2814, #120b06 55%, #090402 100%);
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -161,6 +177,24 @@ button:disabled {
 .animate-\[bounce_0\.5s_ease-out\] {
     animation: bounce 0.5s ease-out;
 }
+
+.bg-ship { background: radial-gradient(circle at top, #3e2d1a, #160f08 40%, #0b0705 100%); }
+.bg-paper { background: radial-gradient(circle at top left, #4a3923, #2a1d10); }
+.bg-board { background: radial-gradient(circle at top left, #3d2a18, #211609); }
+.bg-wood { background-color: #4c3721; }
+.bg-gold { background-color: #d9b24a; }
+.bg-gold-dark { background-color: #b78b21; }
+.bg-treasure { background-color: #f3c44b; }
+.bg-emerald-800 { background-color: #166534; }
+.text-paper { color: #f5e0b8; }
+.text-paper-muted { color: #cab887; }
+.text-gold { color: #d9b24a; }
+.border-wood { border-color: #8a6240; }
+.border-accent-gold { border-color: #d9b24a; }
+.rounded-3xl { border-radius: 1rem; }
+.shadow-pirate { box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.8); }
+.hover\:bg-gold-dark:hover { background-color: #b78b21; }
+.hover\:bg-wood:hover { background-color: #4c3721; }
 
 #blazor-error-ui {
     color-scheme: light only;
