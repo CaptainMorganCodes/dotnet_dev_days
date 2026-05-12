@@ -35,7 +35,9 @@ public class BingoGameService
         WinningLine = null;
         CurrentGameState = GameState.Playing;
         ShowBingoModal = false;
-        _ = SaveGameStateAsync(); // Fire and forget
+#pragma warning disable CS4014 // Intentional fire-and-forget async call
+        SaveGameStateAsync();
+#pragma warning restore CS4014
         NotifyStateChanged();
     }
 
@@ -55,7 +57,9 @@ public class BingoGameService
             }
         }
 
-        _ = SaveGameStateAsync(); // Fire and forget
+#pragma warning disable CS4014 // Intentional fire-and-forget async call
+        SaveGameStateAsync();
+#pragma warning restore CS4014
         NotifyStateChanged();
     }
 
@@ -65,7 +69,9 @@ public class BingoGameService
         Board = new();
         WinningLine = null;
         ShowBingoModal = false;
-        _ = SaveGameStateAsync(); // Fire and forget
+#pragma warning disable CS4014 // Intentional fire-and-forget async call
+        SaveGameStateAsync();
+#pragma warning restore CS4014
         NotifyStateChanged();
     }
 
