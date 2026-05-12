@@ -55,4 +55,6 @@ dotnet build
 
 Deploys automatically to GitHub Pages on push to `main`.
 
-Testing
+
+## Check it out live
+[Public URL](https://CaptainMorganCodes.github.io/dotnet_dev_days)
